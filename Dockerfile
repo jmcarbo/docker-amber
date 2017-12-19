@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y build-essential libreadline-dev libsqlite3-dev libpq-dev libmysqlclient-dev libssl-dev libyaml-dev curl git
+RUN apt-get install -y build-essential libreadline-dev libsqlite3-dev libpq-dev libmysqlclient-dev libssl-dev libyaml-dev curl git apt-transport-https
 RUN curl https://dist.crystal-lang.org/apt/setup.sh | bash
 RUN apt-get update
 RUN apt-get install -y crystal
